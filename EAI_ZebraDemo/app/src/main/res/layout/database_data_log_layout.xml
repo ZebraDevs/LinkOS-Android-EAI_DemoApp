@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+style="?android:attr/listSeparatorTextViewStyle">
+
+<TableRow>
+
+    <TextView
+        android:id="@+id/id_mac"
+        android:layout_width="@dimen/elevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="@dimen/elevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+
+    <TextView
+        android:id="@+id/id_voltage"
+        android:layout_width="@dimen/sevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_status"
+        android:layout_width="@dimen/sevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_health"
+        android:layout_width="@dimen/sevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_recharge"
+        android:layout_width="@dimen/nineLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_batteryCharge"
+        android:layout_width="@dimen/sevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_sleepMode"
+        android:layout_width="@dimen/elevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+
+
+
+    <TextView
+        android:id="@+id/id_speed"
+        android:layout_width="@dimen/elevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_type"
+        android:layout_width="@dimen/elevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_length"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="17dp"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+    <TextView
+        android:id="@+id/id_marker"
+        android:layout_width="@dimen/eightLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_ribbon"
+        android:layout_width="@dimen/nineLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_labels"
+        android:layout_width="@dimen/thirteenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_friendlyName"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+
+
+    <TextView
+        android:id="@+id/id_controller"
+        android:layout_width="@dimen/thirteenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_model"
+        android:layout_width="@dimen/fiveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_language"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_osVersion"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_firmVersion"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+
+
+    <TextView
+        android:id="@+id/id_securityMode"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_minSecurity"
+        android:layout_width="@dimen/twelveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_smpt"
+        android:layout_width="@dimen/sixLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_udp"
+        android:layout_width="@dimen/fiveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_http"
+        android:layout_width="@dimen/sixLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_https"
+        android:layout_width="@dimen/sevenLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_ftp"
+        android:layout_width="@dimen/fiveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+    <TextView
+        android:id="@+id/id_lpd"
+        android:layout_width="@dimen/fiveLetters"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/zebra_blue"
+        android:textSize="@dimen/dataTextSize" />
+
+</TableRow>
+
+</TableLayout>
+

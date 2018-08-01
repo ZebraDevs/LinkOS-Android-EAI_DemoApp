@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="._Main.MainActivity"
+    android:background="@color/zebra_lightGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingBottom="70dp"
+            android:paddingTop="0dp">
+
+
+            <RelativeLayout
+                android:id="@+id/zebraHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:padding="@dimen/margin_default">
+
+                <ImageView
+                    android:id="@+id/zebraLogo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/zebralogo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/zebraLogo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Device Management Data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:textColor="@color/near_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:text="Data captured through BLE"
+                        android:id="@+id/launchpad_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/near_black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/MACLAYOUT"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/zebra_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/idMacAdress"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Data From MAC Address:"
+                    android:textColor="@color/zebra_lightGray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/idMacAdressInput"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/near_black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:background="@drawable/my_border"
+                android:orientation="vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="14dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="BT Controller"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+
+                    <Spinner
+                        android:prompt="@string/app_name"
+                        android:id="@+id/idBtControllerInput"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/darkTextColor"
+                        android:entries="@array/bluetoothModes"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="Friendly Name"
+                        android:id="@+id/idFriendlyName"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+
+                    <EditText
+                        android:id="@+id/idFriendlyNameInput"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions|text"
+                        android:textColor="@color/zebra_blue" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="Model"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+                    <EditText
+                        android:id="@+id/idModelInput"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/zebra_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="Device Language "
+                        android:id="@+id/idDeviceLanguage"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+                    <EditText
+                        android:id="@+id/idDeviceLanguageInput"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/zebra_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="Firmware Version"
+                        android:id="@+id/idFirmware"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+                    <EditText
+                        android:id="@+id/idFirmwareInput"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/zebra_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:text="LINK-OS Version"
+                        android:id="@+id/idLink_os"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/near_black"/>
+                    <EditText
+                        android:id="@+id/idLink_osInput"
+                        android:textSize="14sp"
+                        android:enabled="false"
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="@color/zebra_blue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_get_data"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:background="@color/zebra_mediumGray"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center"
+                android:padding="@dimen/margin_default"
+                android:text="View Data"
+                android:textColor="@color/zebra_lightGray"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button_set_data"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:background="@color/zebra_darkGray"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center"
+                android:padding="@dimen/margin_default"
+                android:text="Set New Configuration"
+                android:textColor="@color/zebra_lightGray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedPrinterFragmentContainer"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="105dp"
+            android:layout_below="@id/selectedPrinterFragmentContainer">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/std_container_margin"
+                android:src="@drawable/zebra_logo_black"
+                android:id="@+id/zebraFooterLogo" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<resources>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    <dimen name="elevation_default">1.2dp</dimen>
+    <dimen name="elevation_large">5dp</dimen>
+    <dimen name="drawer_row_height">48dp</dimen>
+
+    <dimen name="row_height_default">48dp</dimen>
+    <dimen name="row_icon_margin">6dp</dimen>
+    <dimen name="std_container_margin">8dp</dimen>
+
+    <dimen name="get_width">550dp</dimen>
+    <dimen name="get_height">412dp</dimen>
+
+    <dimen name="circle_button_size">72dp</dimen>
+    <dimen name="scroll_view_bottom">88dp</dimen>
+    <dimen name="product_text">18dp</dimen>
+
+
+
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="dot_margin_right">10dp</dimen>
+    <dimen name="msg_no_notes">26sp</dimen>
+    <dimen name="margin_top_no_notes">120dp</dimen>
+    <dimen name="lbl_new_note_title">20sp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="input_new_note">20sp</dimen>
+    <dimen name="dot_height">30dp</dimen>
+    <dimen name="dot_text_size">40sp</dimen>
+    <dimen name="timestamp">14sp</dimen>
+    <dimen name="note_list_text">18sp</dimen>
+
+
+    <dimen name="threeLetters">30dp</dimen>
+    <dimen name="fourLetters">40dp</dimen>
+    <dimen name="fiveLetters">50dp</dimen>
+    <dimen name="sixLetters">60dp</dimen>
+    <dimen name="sevenLetters">70dp</dimen>
+    <dimen name="eightLetters">80dp</dimen>
+    <dimen name="nineLetters">90dp</dimen>
+    <dimen name="tenLetters">100dp</dimen>
+    <dimen name="elevenLetters">110dp</dimen>
+    <dimen name="twelveLetters">120dp</dimen>
+    <dimen name="thirteenLetters">130dp</dimen>
+    <dimen name="fourteenLetters">140dp</dimen>
+    <dimen name="fifteenLetters">140dp</dimen>
+    <dimen name="sixthLetters">140dp</dimen>
+
+    <dimen name="mediaType">180dp</dimen>
+    <dimen name="timeStamp">150dp</dimen>
+
+    <dimen name="dataTextSize">12sp</dimen>
+
+
+
+
+
+</resources>

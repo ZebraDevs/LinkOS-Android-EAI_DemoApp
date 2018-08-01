@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="near_black">#222222</color>
+    <color name="light_gray">#cccccc</color>
+
+
+
+    <color name="zebra_blue">#00769F</color>
+    <color name="zebra_yellow">#FFD200</color>
+    <color name="zebra_lightGray">#dbd8d6</color>
+    <color name="zebra_mediumGray">#7e868c</color>
+    <color name="zebra_darkGray">#333d47</color>
+
+
+
+
+
+    35393E
+
+    <color name="colorPrimary">#455399</color>
+    <color name="colorPrimaryDark">#455399</color>
+    <color name="colorAccent">#00c6ae</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+
+
+    <color name="darkBackGround">#35393E</color>
+    <color name="darkTextColor">#FFD6D6D6</color>
+
+    <color name="darkheader">#283048</color>
+
+
+
+
+</resources>

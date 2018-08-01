@@ -1,0 +1,394 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="._Main.MainActivity"
+    android:background="@color/zebra_lightGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/zebra_lightGray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="80dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/zebra_lightGray"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/zebraHeader"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_border"
+            android:elevation="@dimen/elevation_default">
+
+
+            <ImageView
+                android:id="@+id/zebraLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zebralogo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/zebraLogo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zebra_technologies_corp"
+                    android:textColor="@color/near_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zebra_address_line_1"
+                    android:textColor="@color/near_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/launchpad_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zebra_address_line_2"
+                    android:textColor="@color/near_black"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/thanose"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/my_border"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/zebra_blue"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/ipDnsRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:text="Lock MAC"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/bluetoothRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="Unlock MAC"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/macAddressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:text="MAC Address:"
+                    android:textColor="@color/near_black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/macInput"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0"
+                    android:enabled="false"
+                    android:hint="Enter or Scan a MAC"
+                    android:inputType="textNoSuggestions|text"
+                    android:textSize="16.0sp"
+                    android:textColor="@color/zebra_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@color/zebra_lightGray"
+                >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_print" />
+
+            <Button
+                android:text="Print Test (Configuration Label)"
+                android:id="@+id/button_config"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:background="@drawable/my_border"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_battery" />
+
+            <Button
+                android:id="@+id/button_battery_management"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:text="Battery Management Data"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_media" />
+
+            <Button
+                android:id="@+id/button_media_management"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:text="Media Management Data"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_printer" />
+
+            <Button
+                android:id="@+id/button_device_management"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:text="Device Management Data"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_security" />
+
+            <Button
+                android:id="@+id/button_security_management"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:text="Security Management Data"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_search" />
+
+            <Button
+                android:text="Explore Your Data"
+                android:id="@+id/button_database_access"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@color/zebra_lightGray"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/zebra_downloading" />
+
+            <Button
+                android:text="Quick Save"
+                android:id="@+id/button_save_data"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/my_border"
+                android:elevation="@dimen/elevation_default"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                android:textColor="@color/near_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedPrinterFragmentContainer"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@id/selectedPrinterFragmentContainer">
+
+            <ImageView
+                android:id="@+id/zebraFooterLogo"
+                android:layout_width="139dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/std_container_margin"
+                android:src="@drawable/zebra_logo_black" />
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

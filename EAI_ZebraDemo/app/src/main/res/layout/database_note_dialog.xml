@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="8sp"
+        android:text="Add printer data?"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lbl_new_note_title"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/near_black"
+            android:textSize="@dimen/input_new_note" />
+
+    </LinearLayout>
+
+</LinearLayout>

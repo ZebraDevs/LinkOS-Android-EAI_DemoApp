@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zebra_lightGray"
+    android:paddingBottom="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="._Main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/relallal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/zebraHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+
+            android:layout_marginTop="6dp"
+            android:background="@drawable/my_border"
+            android:elevation="@dimen/elevation_default"
+            android:padding="@dimen/margin_default">
+
+            <ImageView
+                android:id="@+id/zebraLogo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/zebralogo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/zebraLogo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Data Log"
+                    android:textColor="@color/near_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/launchpad_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This Printer's History"
+                    android:textColor="@color/near_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/MACLAYOUT"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/zebra_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/idMacAdress"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Selected MAC Address:"
+                android:textColor="@color/zebra_lightGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/idMacAdressInput"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/near_black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/HorScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_10">
+
+            <LinearLayout
+                android:id="@+id/verticleLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/HorizLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:background="@drawable/my_border"
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/Mac_Address"
+                        android:layout_width="@dimen/elevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Date_Saved"
+                        android:layout_width="@dimen/elevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+
+
+
+
+
+                    <TextView
+                        android:text="@string/Voltage"
+                        android:layout_width="@dimen/sevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Status"
+                        android:layout_width="@dimen/sevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Health"
+                        android:layout_width="@dimen/sevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Recharge"
+                        android:layout_width="@dimen/nineLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Charge"
+                        android:layout_width="@dimen/sevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Sleep_Mode"
+                        android:layout_width="@dimen/elevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+
+
+
+
+                    <TextView
+                        android:text="@string/Media_Speed"
+                        android:layout_width="@dimen/elevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Media_Type"
+                        android:layout_width="@dimen/elevenLetters"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/near_black"
+                        android:gravity="center"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Media_Length"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Marker"
+                        android:layout_width="@dimen/eightLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Ribbon"
+                        android:layout_width="@dimen/nineLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Printed_Labels"
+                        android:layout_width="@dimen/thirteenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+
+
+
+
+
+                    <TextView
+                        android:text="@string/Friendly_Name"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/BT_Controller"
+                        android:layout_width="@dimen/thirteenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Model"
+                        android:layout_width="@dimen/fiveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Language"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/LinkOS_Version"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Firmware_Version"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+
+
+
+                    <TextView
+                        android:text="@string/Security_Mode"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/Min_Security"
+                        android:layout_width="@dimen/twelveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/SMTP"
+                        android:layout_width="@dimen/sixLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/UDP"
+                        android:layout_width="@dimen/fiveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/HTTP"
+                        android:layout_width="@dimen/sixLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/HTTPS"
+                        android:layout_width="@dimen/sevenLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/FTP"
+                        android:layout_width="@dimen/fiveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:text="@string/LPD"
+                        android:layout_width="@dimen/fiveLetters"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/near_black"
+                        android:textSize="16dp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_dataRecycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

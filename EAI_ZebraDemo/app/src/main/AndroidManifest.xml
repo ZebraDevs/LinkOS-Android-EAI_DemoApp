@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zebra.EAI_BLE_demo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="._Main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ManagementClasses.BatteryManagement"
+            android:parentActivityName="._Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="._Main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ManagementClasses.DeviceManagement"
+            android:parentActivityName="._Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="._Main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ManagementClasses.MediaManagement"
+            android:parentActivityName="._Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="._Main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ManagementClasses.SecurityManagement"
+            android:parentActivityName="._Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="._Main.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".DatabaseClasses.macActivity_database"
+            android:parentActivityName="._Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DatabaseClasses.macActivity_database" />
+        </activity>
+
+        <activity
+            android:name=".DatabaseClasses.dataActivity_database"
+            android:parentActivityName=".DatabaseClasses.macActivity_database"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DatabaseClasses.dataActivity_database" />
+        </activity>
+
+        <activity
+            android:name=".ManagementClasses._QuickSave"
+            android:parentActivityName=".DatabaseClasses.macActivity_database"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManagementClasses._QuickSave" />
+        </activity>
+
+    </application>
+
+</manifest>
