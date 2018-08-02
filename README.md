@@ -8,6 +8,9 @@ Find [API Documentation](http://techdocs.zebra.com/link-os) here.
 
 [Developer Community](https://developer.zebra.com/community/technologies/printers) and Forums.
 
+
+[LISCENCE AGREEMENT](https://github.com/Zebra/LinkOS-Android-EAI_DemoApp/blob/master/LISCENCE_AGREEMENT)
+
 <p align="center">
 
 <img width="432" height=”600” alt="screen shot 2018-08-02 at 3 04 04 pm" src="https://user-images.githubusercontent.com/39741401/43608194-31d6396e-9666-11e8-9c24-3cb5ec82140e.png">
